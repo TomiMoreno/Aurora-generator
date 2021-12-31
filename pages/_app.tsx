@@ -6,14 +6,12 @@ const theme = extendTheme({
   config: {
     initialColorMode: 'dark',
     useSystemColorMode: false,
-  }
+  },
 })
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider 
-      theme={theme}
-    >
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   )

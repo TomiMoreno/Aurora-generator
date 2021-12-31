@@ -15,67 +15,68 @@ a {
   box-sizing: border-box;
 }
 
-:root{
-  --blur:60px;
+:root {
+  --blur: 60px;
 }
-  .one {
-    border-radius: 100%;
-    width: 600px;
-    height: 600px;
-    background-color: #373372;
-    left:-50px;
-    top:-300px;
-    z-index: 3;
-    animation: fly 12s linear infinite;
-    transform:rotate(0) translate(80px) rotate(0);
-  }
+.one {
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+  background-color: #373372;
+  left: -50px;
+  top: -300px;
+  z-index: 3;
+  animation: fly 12s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
 
-  .two {
-    width: 500px;
-    height: 800px;
-    background-color: #7C336C;
-    bottom:-30px;
-    left:-80px;
-  }
+.two {
+  width: 500px;
+  height: 800px;
+  background-color: #7c336c;
+  bottom: -30px;
+  left: -80px;
+}
 
-  .three {
-    border-radius: 100%;
-    width: 450px;
-    height: 450px;
-    bottom:-80px;
-    right:-100px;
-    background-color: #B3588A;
-    animation: flyPlus 8s linear infinite;
-    transform:rotate(0) translate(100px) rotate(0);
-  }
+.three {
+  border-radius: 100%;
+  width: 450px;
+  height: 450px;
+  bottom: -80px;
+  right: -100px;
+  background-color: #b3588a;
+  animation: flyPlus 8s linear infinite;
+  transform: rotate(0) translate(100px) rotate(0);
+}
 
-  .four {
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    bottom:200px;
-    right:200px;
-    background-color: #00ff15;
-    animation: flyPlus 3s linear infinite;
-    transform:rotate(0) translate(100px) rotate(0);
-  }
+.four {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  bottom: 200px;
+  right: 200px;
+  background-color: #00ff15;
+  animation: flyPlus 3s linear infinite;
+  transform: rotate(0) translate(100px) rotate(0);
+}
 
-  @keyframes fly {
+@keyframes fly {
   100% {
-    transform:rotate(1turn) translate(100px) rotate(-1turn);
+    transform: rotate(1turn) translate(100px) rotate(-1turn);
   }
 }
 
 @keyframes flyPlus {
   100% {
-    transform:rotate(-1turn) translate(100px) rotate(1turn);
+    transform: rotate(-1turn) translate(100px) rotate(1turn);
   }
 }
 .wrapper {
   width: 100%;
   min-height: 100vh;
   position: absolute;
-  overflow:hidden;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .wrapper div {
